@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetMoney">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4BAEEF"
+            android:orientation="horizontal"
+            android:padding="10sp">
+
+            <ImageView
+                android:id="@+id/btnBackFromNH"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_margin="3sp"
+                android:background="#4BAEEF"
+                android:src="@drawable/arr_back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:text="Rút tiền"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_soTien_rutTien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:hint="Số tiền muốn rút"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edt_stk_rutTien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:hint="Nhập thông tin thứ nhất" />
+
+        <EditText
+            android:id="@+id/edt_nganHang_rutTien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:hint="Nhập thông tin thứ hai" />
+
+
+        <Button
+            android:id="@+id/btn_Xacnhan_Rutien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/bo_goc"
+            android:text="Xác nhận" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:text="Chú ý:"
+            android:textColor="#EA2F2F"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:text="Thông tin thứ nhất ở đây là nhà mạng\nnếu muốn rút thẻ điện thoại\nhoặc là tài khoản ngân hàng nếu\nmuốn rút về tài khoản"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="5sp"
+            android:text="Thông tin thứ hai là nếu muốn rút về\nngân hàng thì điền tên ngân hàng"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="5sp"
+            android:text="Trường hợp chuyển về ví Momo thì điền\nsố tài khoản là số điện thoại đăng kí Momo\ncòn tên ngân hàng thì ghi: momo"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="5sp"
+            android:text="Việc rút tiền sẽ được xử lí trong 24h\ncho nên hãy kiên nhẫn chờ đợi"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

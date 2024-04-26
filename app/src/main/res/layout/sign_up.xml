@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/btn_back_dk"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/arrow_back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:layout_margin="10sp"
+            android:src="@drawable/dk" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_layout_taikhoan_dk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_input_taikhoan_dk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Tài khoản" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_layout_matkhau_dk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_input_matkhau_dk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_layout_rematkhau_dk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_input_rematkhau_dk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Xác nhận mật khẩu"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_dangki_dk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginTop="5sp"
+            android:background="@drawable/bo_goc"
+            android:text="Đăng kí"
+            android:textColor="#446FF1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_dangnhap_dk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:text="Đăng nhập ngay?"
+            android:textAlignment="center"
+            android:textColor="#446FF1"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/loading_dk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+</LinearLayout>

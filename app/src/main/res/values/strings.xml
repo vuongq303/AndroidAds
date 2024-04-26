@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ProjectAds</string>
+    <string name="adsSignUp">ca-app-pub-3940256099942544/9214589741</string>
+    <string name="adsSignIn">ca-app-pub-3940256099942544/9214589741</string>
+    <string name="adsMain">ca-app-pub-3940256099942544/9214589741</string>
+    <string name="adsRutTienNH">ca-app-pub-3940256099942544/9214589741</string>
+    <string name="adsTheDT">ca-app-pub-3940256099942544/9214589741</string>
+</resources>
